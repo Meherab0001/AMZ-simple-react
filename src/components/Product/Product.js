@@ -14,10 +14,11 @@ const Product = ({handleToAddCart ,product}) => {
             <p><small>Manufauter:{seller}</small></p>
             <p><small>Ratings:{ratings}</small></p>
            </div>
-           <button onClick={handleToAddCart  } className='btn-cart'>
+           <button onClick={()=>handleToAddCart (product) } className='btn-cart'>
                <p className='btn-text'>Add to Cart</p>
                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
            </button>
+          
         </div>
     );
 };

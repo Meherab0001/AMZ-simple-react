@@ -1,0 +1,11 @@
+.cart{
+    position: sticky;
+    top: 0;
+    padding: 28px 20px;
+}
+@media only screen and (max-width: 680px){
+    .cart{
+        position: sticky;
+        top: 0;
+    }
+}

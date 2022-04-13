@@ -4,6 +4,7 @@
 
 }
 .products-container{
+    display: flex;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-top: 100px;
@@ -12,4 +13,15 @@
 }
 .cart-container{
  background:  #FFE0B3;
+}
+@media only screen and (max-width: 679px){
+    .products-container{
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+
+        
+    }
+    .shop-container{
+      overflow-wrap: break-word;
+    }
 }
